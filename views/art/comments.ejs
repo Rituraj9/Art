@@ -1,0 +1,22 @@
+<% include partials/header %>
+<br><br>
+<div class="container">
+
+<h1 style="text-align: center; padding-top:100px;">Add New Comment to  <%= art.name %></h1>
+
+<form action="/art/show/<%= art._id %>/comments" method="POST">
+
+<div class="form-group">
+<input type="text" class="form-control" placeholder="text" name="comment[text]">
+</div>
+
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+
+<a href="/art/show">Back</a>
+<% include partials/footer %>
+</div>
+
+

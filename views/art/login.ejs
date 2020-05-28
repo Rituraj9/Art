@@ -1,0 +1,90 @@
+<% include /partials/header %>
+<style>
+.container
+{
+  padding-top: 2%;
+ border: 2px solid red;
+ margin-top: 50px;
+ }
+body
+{
+  background: url("https://images.unsplash.com/photo-1566301738357-2e0cc60c4d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.form-group
+{
+  color: "golden";
+  text-shadow: 0px 8px 15px red;
+}
+h1
+{
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  text-shadow: 0px 4px 15px orange,
+  0px 8px 20px yellow,
+  0px 14px 25px blue;
+}
+html
+{
+  height: 100%;
+}
+#emailHelp
+{
+  color: rgb(255,100,150);
+}
+
+}
+body
+{
+  background: url("https://images.unsplash.com/photo-1566301738357-2e0cc60c4d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.form-group
+{
+  color: "golden";
+  text-shadow: 0px 8px 15px red;
+}
+h1
+{
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  text-shadow: 0px 4px 15px orange,
+  0px 8px 20px yellow,
+  0px 14px 25px blue;
+}
+html
+{
+  height: 100%;
+}
+#emailHelp
+{
+  color: rgb(255,100,150);
+}
+</style>
+<div class="container">
+    <div class="animated wobble">
+	<h1>Login</h1>
+</div>
+	<form action="/login" method="POST">
+    <div class="animated lightSpeedIn">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="username" placeholder="username" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="password" required>
+  </div>
+    <div class="form-group">
+  <button class="btn btn-primary">Login</button></div>
+  <div class="form-group">
+  <p>Forgot Password?<a class="btn btn-primary" href="/forget">Reset</a></p></div>
+</div>
+</form>
+</div>
+<% include partials/footer %>
+

@@ -1,0 +1,46 @@
+{
+  "name": "postrequest",
+  "version": "1.0.0",
+  "description": "cat",
+  "main": "Art/home.js",
+  "engines": {
+    "node": "12.16.x"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "body-parser": "^1.19.0",
+    "cat-me": "^1.0.3",
+    "cloudinary": "^1.21.0",
+    "connect-flash": "^0.1.1",
+    "crypto": "^1.0.1",
+    "ejs": "^1.0.0",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.17.1",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "joke": "0.0.1-1",
+    "knock-knock": "^2.0.0",
+    "knock-knock-jokes": "^1.7.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.12",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "npm": "^6.14.4",
+    "particlesjs": "^2.2.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "Art/home.js"
+  },
+  "author": "me",
+  "license": "ISC"
+}

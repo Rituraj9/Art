@@ -1,0 +1,36 @@
+i
+{
+	font-size: 1em;
+}
+h1
+{
+	color: blue;
+}
+.container
+{
+	margin-top: 100px;
+	margin-left: 300px;
+}
+.border
+{
+	padding-bottom: 20px;
+	text-shadow: 4px 8px 15px red;
+}
+.rr
+{
+	border: 1px solid gold;
+	float: left;
+	border-width: 15px;
+	padding: 50px 50px 50px 50px;
+}
+.form-group
+{
+	font-size: 15px;
+}
+html{
+	height: 100%;
+}
+#delete
+{
+	display: inline;
+}

@@ -1,0 +1,81 @@
+<% include /partials/header %>
+<style>
+body
+{
+	margin:0;
+	padding:0;
+	line-height:1.5;
+	height:100vh;
+	background : url('https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+	background-size:cover;
+	background-position:center;
+	color: white;
+}
+.container
+{
+	width:600px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255,255,255,.2);
+	border-radius:7px;
+	padding: 20px;
+	box-sizing: border box;	
+}
+.container form{
+width:100%;
+}
+h1
+{
+text-align:center;
+margin-bottom: 35px;
+color: red;
+text-shadow: 0px 4px 8px blue;
+}
+.form-group
+{
+    display:flex;
+	width:90%;
+	margin-bottom:35px;
+	padding-left: 25px;
+}
+input
+{
+	padding: 10px 10px;
+}
+label
+{
+	margin-right: 10px;
+}
+#particles-js
+{
+width:100%;
+height:90%;
+}
+</style>
+<div id="particles-js">
+<div class="container">
+<form action="/art/show" method="POST" enctype="multipart/form-data">
+<h1>UPLOAD YOUR ART</h1>
+<div class="form-group">
+<label for="Name">Image Name:</label>
+<input type="text" placeholder="Image Name" name="art[name]">
+</div>
+<div class="form-group">
+<label for="image">Image:</label>
+<input type="file" name="image" multiple/>
+</div>
+<div class="form-group">
+<label for="description">Description:</label>
+<textarea name="art[description]"></textarea>
+</div>
+<div class="form-group">
+<button class="btn btn-primary">Submit</button>
+</div>
+</form>
+<% include /partials/footer %>
+</div>
+</div>
+
+

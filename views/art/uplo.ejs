@@ -1,0 +1,13 @@
+<% include /partials/header %>
+<div class="container">
+<form action="/upload/show" method="POST" enctype="multipart/form-data">
+<div class="form group">
+<label for="image">Image Name:</label>
+<input type="file" name="image" multiple/>
+</div>
+<div class="form-group">
+<button type="submit">Upload</button>
+</div>
+</form>
+</div>
+<% include /partials/footer %>

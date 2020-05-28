@@ -1,0 +1,31 @@
+html
+{
+	background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	height: 100%;
+}
+body
+{
+	background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1
+{
+	color: yellow;
+	text-align:center;
+	text-transform: uppercase;
+	text-shadow: 0px 4px 10px red;
+	padding-top: 8%;
+	padding-bottom: 5%;
+}
+.container
+{
+	text-align: center;
+	border: 1px solid gold;
+	padding-top:0.09%;
+	padding-left: 5%;
+}

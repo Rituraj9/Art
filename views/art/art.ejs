@@ -1,0 +1,55 @@
+<% include ./partials/header %>
+<style>
+#main
+{
+	margin-top:30px;
+	background:url('https://images.unsplash.com/photo-1512172661749-6c4abdd99338?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+	text-align:center;
+	color: blue;
+	text-shadow:0px 4px 8px red; 
+}
+body
+{
+	background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+a
+{
+float: right;
+}
+#up
+{
+	background:url('https://images.unsplash.com/photo-1559709907-628d0c7c1878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+}
+#up h2
+{
+	color:red;
+	text-shadow:0px 4px 8px blue;
+}
+#show
+{
+	background:url('https://images.unsplash.com/photo-1475727946784-2890c8fdb9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80');
+}
+#show h2
+{
+    color: green;
+	text-shadow: 0px 4px 8px red;
+}
+</style>
+<div class="container">
+<div class="jumbotron animated fadeIn" id="main">
+  <h1 class="display-4"><strong>Welcome to Art Gallery</strong></h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+</div>
+<div class="jumbotron animated fadeInLeft delay-1s" id="up">
+<h2>If u have that passion to draw and upload images then Do it here!</h2>
+  <a class="btn btn-primary btn-lg" href="/art/new" data-container="body" role="button" data-toggle="popover" data-placement="right" data-content="Upload">Upload Your Creation</a>
+</div>
+<div class="jumbotron animated fadeInRight delay-1s" id="show">
+<h2>See the Beautiful Art of Some Great Users!</h2>
+  <a class="btn btn-primary btn-lg" href="/art/show" role="button">Show Arts</a>
+</div>
+</div>
+<% include ./partials/footer %>

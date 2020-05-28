@@ -1,0 +1,112 @@
+<% include /partials/header %>
+<style>
+body,html
+{
+	width:100%;
+	height:100vh;
+	background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background-size:cover;
+	background-position:center;
+}
+.figure
+{
+	margin:0;
+	padding:0;
+}
+.figure img
+{
+	width:500px;
+	height:400px;
+}
+.figure-caption
+{
+	font-size:23px;
+	font-weight:bold;
+	color:black;
+	text-shadow:0px 4px 8px red,
+	0px 10px 15px yellow;
+}
+#delete-form
+{
+	display:inline;
+}
+.figure .content
+{
+	border:1px solid blue;
+	vertical-align: middle;
+	box-shadow: 0px 4px 8px red,
+	0px 8px 15px yellow;
+	vertical-align:left;
+}
+.content h2
+{
+	text-align:center;
+}
+.content p
+{
+	padding-left:20px;
+}
+</style>
+<div class="container">
+<figure class="figure">
+
+<img src= "<%= art.image %>" class="figure-img img-fluid rounded">
+<figcaption class="figure-caption"
+<h1><%= art.name %></h1>
+<p>
+  <em>Submitted by: <%= art.user.username %>, <%= moment(art.created).fromNow() %></em>
+</p>
+</figcaption>
+<div class="content">
+<h2>About Image</h2>
+<p>
+<%= art.description %>
+</p>
+</div>
+<br>
+<% if(currentUser && art.user.id.equals(currentUser._id)){ %>
+<a class="btn btn-success" href="/art/show/<%= art._id %>/edit">Edit</a>
+<form id="delete-form" action="/art/show/<%= art._id %>?_method=DELETE" method="POST">
+<button class="btn btn-danger">Delete</button>
+</form>
+<% } %>
+</div>
+</figure>
+</div>
+<hr>
+
+<div class="well">
+<div class="text-center">
+    <a class="btn btn-success" href="/art/show/<%= art._id %>/comments/new">Leave a Review</a>
+</div>
+<hr>
+<div class="container">
+<% art.comments.forEach(function(comment){ %>
+    <div class="row">
+    <div class="col-md-12">
+        <strong><%= comment.author.username %></strong>
+        <p>
+	        <%= comment.text %>,
+	        <span class="text-right"><%= moment(comment.createdAt).fromNow() %></span>
+	    </p>
+        <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+        <a class="btn btn-xs btn-warning" href="/art/show/<%= art._id %>/comments/<%=comment._id %>/edit">Edit</a>
+        <form id="delete-form" action="/art/show/<%= art._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
+        <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+        </form>
+         <% } %>
+	    </div>
+	    </div>
+<% }) %>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="container embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QiBeywmJoRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<% include /partials/footer %>
