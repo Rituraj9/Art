@@ -1,4 +1,4 @@
-<% include /partials/header %>
+<% include ./partials/header %>
 <div class="container">
 <h1>Edit <%= art.name %></h1>
 <form action="/art/show/<%= art._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
@@ -19,4 +19,4 @@
 </div>
 </form>
 </div>
-<% include /partials/footer %>
+<% include ./partials/footer %>
