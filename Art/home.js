@@ -595,6 +595,4 @@ app.get('/upload/show',function(req,res){
 	});
 });*/
 
-app.listen(4000  || process.env.PORT, process.env.IP,function(){
-	console.log("Connected to Art Gallery!");
-});
+app.listen(process.env.PORT, process.env.IP);
