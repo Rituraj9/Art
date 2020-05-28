@@ -2,7 +2,7 @@
   "name": "postrequest",
   "version": "1.0.0",
   "description": "cat",
-  "main": "Art/home.js",
+  "main": "home.js",
   "engines": {
     "node": "12.16.x"
   },
@@ -39,7 +39,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "Art/home.js"
+    "start": "home.js"
   },
   "author": "me",
   "license": "ISC"
