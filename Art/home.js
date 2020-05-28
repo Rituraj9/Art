@@ -12,10 +12,10 @@ const fs = require("fs");
 var nodemailer = require("nodemailer");
 var async = require("async");
 var crypto = require("crypto");
-var Art = require("../models/Art/art");
-var User = require("../models/Art/user");
-var Comment = require("../models/Art/comment");
-var Contact = require("../models/Art/contact");
+var Art = require("./models/Art/art");
+var User = require("./models/Art/user");
+var Comment = require("./models/Art/comment");
+var Contact = require("./models/Art/contact");
 /*var Image = require("./models/Art/image");*/
 var methodOverride= require("method-override");
 
