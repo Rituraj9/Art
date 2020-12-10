@@ -95,7 +95,7 @@ app.post("/register",function(req,res){
                  service: "gmail",
                  auth: {
                         user: 'rrartgal@gmail.com', // generated ethereal user
-                        pass: 'artist2020', // generated ethereal password
+                        pass: 'Artist2021', // generated ethereal password
                     }
                 });
 
@@ -181,7 +181,7 @@ app.post("/forget", function(req,res,next){
 				service:'Gmail',
 				auth:{
 					user: 'rrartgal@gmail.com',
-					pass:'artist2020',
+					pass:'Artist2021',
 				}
 			});
 			var mailOptions = {
@@ -243,7 +243,7 @@ function(user,done){
 				service:'Gmail',
 				auth:{
 					user: 'rrartgal@gmail.com',
-					pass:'artist2020',
+					pass:'Artist2021',
 				}
 			});
 			var mailOptions = {
