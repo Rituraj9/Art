@@ -22,7 +22,7 @@ var methodOverride= require("method-override");
 /*mongoose.connect("mongodb://localhost:27017/Art", { useNewUrlParser: true });
 mongoose.createConnection("mongodb://localhost:27017/Art", { useNewUrlParser: true });
 */
-mongoose.connect('mongodb+srv://ArtGallery:rr@cluster0-vedgn.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://art:rr@artgallery.ay9ixkb.mongodb.net/',{
 	useNewUrlParser: true
 });
 
